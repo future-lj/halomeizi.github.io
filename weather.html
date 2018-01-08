@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>天气页面</title>
+    <!--css begin-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--css end-->
+</head>
+<body>
+    <!--weather page begin-->
+    <div class="container-fluid">
+        <div class="row">
+            <!--天气 begin-->
+            <div class="col-xs-12 backgroundCommon">
+                <div class="weatherLocation">
+                    <span class="pull-left geoLocation location">--</span>
+                    <span class="pull-right updateTime time">--</span>
+                </div>
+                <div class="weatherIcon">
+                    <img src="images/Cloud.png" alt="">
+                    <p class="weather">--</p>
+                </div>
+                <div class="weatherValue">
+                    <div>
+                        <strong class="temprature">--</strong>
+                        <span class="slash">/</span>
+                    </div>
+                    <div>
+                        <span class="air date">--</span>
+                        <span class="airValue airquality">--空气--</span>
+                    </div>
+                </div>
+
+            </div>
+            <!--天气 end-->
+            <!--天气提示 begin-->
+            <div class="col-xs-12 backgroundCommon weatherWarningBorder">
+                <div class="weatherWarning">
+                    <div class="speed">
+                        <img src="./images/windSpeed.png" alt="">
+                        <div class="speedValue">
+                            <span>风速</span>
+                            <span class="speedLevel windspeed">--</span>
+                        </div>
+                    </div>
+                    <div class="dress">
+                        <img src="./images/clothes.png" alt="">
+                        <div class="dressValue">
+                            <span>穿衣指数</span>
+                            <span class="dressLevel clothes">--</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--天气提示 end-->
+        </div>
+
+    </div>
+    <!--weather page end-->
+
+    <!--js begin-->
+    <script src="plugins/jquery.min.js"></script>
+    <script src="plugins/bootstrap.min.js"></script>
+    <script src="plugins/highcharts.js"></script>
+    <script src="js/weather.js"></script>
+    <!--js end-->
+</body>
+</html>
